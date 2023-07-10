@@ -239,65 +239,79 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#hero ,#particles-js{
+  margin-top:-60px;
   width: 100%;
   height: 100vh;
-  background: url("../img/background2.jpg") top center;
-  background-size: cover;
+  background-color:  linear-gradient(to bottom, #2980B9, #6DD5FA) ;      /*66757f*/
+  margin-bottom: 0px;
+ 
+ 
 }
 
-#hero:before {
-  content: "";
-  background: rgba(5, 13, 24, 0.3);
+  #particles-js:before {
+  
+  
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
-}
+}  
 
-#hero .hero-container {
-  position: relative;
-  z-index: 2;
+#particles-js{
+  position:relative;
+  z-index: 1;
   min-width: 300px;
+  
 }
 
-#hero h1 {
-  margin: 0 0 10px 0;
+#particles-js .centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+ #particles-js .centered-text h1 {
+  margin: 0px 0 10px 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
-}
+  color: #000;
+  
+} 
 
-#hero p {
-  color: #fff;
+ #particles-js .centered-text p {
+  color: #000;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
-}
+} 
 
-#hero p span {
-  color: #fff;
+#particles-js p span {
+  color: #149ddd;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #particles-js {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
+  #particles-js {
+    font-size: 23px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #particles-js h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -308,7 +322,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 30px 0;
   overflow: hidden;
 }
 
